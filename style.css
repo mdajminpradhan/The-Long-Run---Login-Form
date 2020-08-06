@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.wrapper {
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.form-section h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.form-section span {
+    height: 6px;
+    width: 115px;
+    background: lime;
+    display: block;
+    margin: 30px 0;
+}
+
+.email, .password {
+    margin: 25px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+input[type=email], input[type=password] {
+    background: transparent;
+    border: none;
+    padding-bottom: 20px;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.email {
+    margin-top: 40px;
+}
+
+.email, .password {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+form i {
+    color: lime;
+    margin-right: 15px;
+}
+
+label {
+    color: white;
+}
+
+.rember {
+    margin-bottom: 30px;
+}
+
+.submit {
+    border: 1px solid lime;
+    text-align: center;
+}
+
+.submit .btn {
+	color: white;
+	font-size: 1.5rem;
+	background: transparent;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: limegreen
+}
+
+.submit:hover .btn {
+    color: black;
+}
+
+
+@media only screen and (max-width: 719px){
+    .wrapper {
+        width: 50%;
+        margin-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 635px){
+    .wrapper {
+        width: 70%;
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 587px){
+    .wrapper {
+        width: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .wrapper {
+        width: 75% !important;
+}
